@@ -6,30 +6,44 @@
     <title>Formulario</title>
 </head>
 <body>
+    <!--action direccion de adonde va a ir la informacion de enviar 
+    name = nombre al formulario 
+    -->
+    <form action="" name="contacto" id="contacto" method="" >
     <label for="nombre">Nombre: </label>
-    <input 
-    id = "nombre" 
-    type="text" 
-    placeholder="Ingrese el nombre"
-    maxlength="10">
-    <!--Otros Atributos: value, readonly,disabled,size,maxlength -->
-    <br/>
-    <br>
-    <!--El name se utiliza para relacionar la informacion que vamos a enviar
-        El Id es para relacionar el campo con JavaScript -->
-    <textarea name="mensaje" id="mensaje" placeholder="mensaje"></textarea>
-    <br>
-    <label for="pais">Pais</label>
-    <select name="pais"  id="pais">
-        <option value="mexico">Mexico</option>
-        <option value="republicadominicana">Republica Dominicana</option>
-        <option value="argentina">Argentina</option>
-        <option value="peru">Perú</option>
-    </select>
-    <br/>
+        <input 
+        id = "nombre" 
+        type="text" 
+        placeholder="Ingrese el nombre"
+        maxlength="10">
+        <!--Otros Atributos: value, readonly,disabled,size,maxlength -->
+        <br/>
+        <br>
+        <!--El name se utiliza para relacionar la informacion que vamos a enviar
+            El Id es para relacionar el campo con JavaScript -->
+        <textarea name="mensaje" id="mensaje" placeholder="mensaje"></textarea>
+        <br>
+        <label for="pais">Pais</label>
+        <select name="pais"  id="pais">
+            <option value="mexico">Mexico</option>
+            <option value="republicadominicana">Republica Dominicana</option>
+            <option value="argentina">Argentina</option>
+            <option value="peru">Perú</option>
+        </select>
+        <br/>
 
-    <input type="radio" id="espanol" value="espanol" name="idioma" ><label for="espanol">Espanol</label>
-    <input type="radio" id="ingles" value="ingles" name="idioma"><label for="ingles">Ingles</label>
+        <input type="radio" id="espanol" value="espanol" name="idioma" ><label for="espanol">Espanol</label>
+        <input type="radio" id="ingles" value="ingles" name="idioma"><label for="ingles">Ingles</label>
+        <br>
+        <br>
+        <input type="checkbox" id="terminos" name="terminos"><label for="terminos">
+            Aceptar Terminos y condiciones
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Enviar Datos">
+    </form>
+
 
 </body>
 </html>
