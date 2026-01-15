@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <label for="nombre">Nombre: </label>
+    <input 
+    id = "nombre" 
+    type="text" 
+    placeholder="Ingrese el nombre"
+    maxlength="10">
+    <!--Otros Atributos: value, readonly,disabled,size,maxlength -->
+    <br/>
+    <br>
+    <!--El name se utiliza para relacionar la informacion que vamos a enviar
+        El Id es para relacionar el campo con JavaScript -->
+    <textarea name="mensaje" id="mensaje" placeholder="mensaje"></textarea>
+    <br>
+    <label for="pais">Pais</label>
+    <select name="pais"  id="pais">
+        <option value="mexico">Mexico</option>
+        <option value="republicadominicana">Republica Dominicana</option>
+        <option value="argentina">Argentina</option>
+        <option value="peru">Perú</option>
+    </select>
+    <br/>
+
+    <input type="radio" id="espanol" value="espanol" name="idioma" ><label for="espanol">Espanol</label>
+    <input type="radio" id="ingles" value="ingles" name="idioma"><label for="ingles">Ingles</label>
+
+</body>
+</html>
